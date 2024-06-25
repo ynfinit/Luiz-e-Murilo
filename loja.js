@@ -14,8 +14,7 @@ let adi2000 = {
     marca: 'adidas',
     tamannho: 43,
     material: 'couro de poliuretano',
-    cor: 'preto',
-    estampa: ''
+    cor: 'preto'
 }
  calcados.push(adi2000)
 
@@ -67,12 +66,11 @@ let adi2000 = {
             rl.question('Digite o tamanho do tenis: ', (tamanho) => {
                 rl.question('Digite o material do tenis: ', (material) => {
                     rl.question('Digite a cor do tenis: ', (cor) => {
-
+                      calcados.push({ nome: nome, maraca: marca, tamanho: tamanho, material: material, cor: cor})
+                        console.log(`Tenis cadastrado com sucesso!`)
+                        exibirMenu()  
                     })
                 })
-        funcionarios.push({ nome: nome, maraca: marca, tamanho: tamanho, material: material, cor: cor})
-        console.log(`Tenis cadastrado com sucesso!`)
-        exibirMenu()
         })
     })
 })
@@ -99,5 +97,12 @@ function remover(){
 
 
 function listar(){
-    if(calcados == 0 ){}
+    if(calcados == 0 ){
+        console.log('Esta vazio')
+        exibirmenu()
+    }
+    else{
+        console.log(calcados)
+        exibirmenu()
+    }
 }
