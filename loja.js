@@ -28,7 +28,8 @@ let adi2000 = {
     2. Pesquisar calçado
     3. Remover calçado
     4. Listar todos os calçados
-    5. Sair
+    5. Editar um calçado
+    6. Sair
    `)
 
 
@@ -46,7 +47,11 @@ let adi2000 = {
         case '4':
             listar()
             break
+
         case '5':
+            editar()
+            break
+        case '6':
             console.log('Saindo do programa.')
             rl.close()
             break
@@ -106,3 +111,55 @@ function listar(){
         exibirmenu()
     }
 }
+
+function pesquisar(){
+    if (calcados.length == 0){
+        console.log('Não a nenhum calçado cadastrado!')
+    }else{
+            rl.question('Qual o nome do tenis que você deseja procurar?' , (pesquisa) => {
+            for (let i = 0; i < calcados.length; i++) {
+                if (calcados[i].nome == pesquisa) {
+                    console.log(`
+                    Seu calçado é ${calcados[i].nome}
+                    Sua marca é ${calcados[i].marca}
+                    Seu tamanho é ${calcados[i].tamannho}
+                    Seu material é ${calcados[i].material}
+                    Sua cor é ${calcados[i].cor}
+                    Sua estampa é ${calcados[i].estampa}
+                    `)
+                }exibirmenu()
+            }
+        })
+}}      
+
+function editar(){
+    if (calcados.length == 0 ){
+        console.log('Nenhum calçado listado!')
+    }else {
+            for (let i = 0;i < calcados.length; i ++) {
+            console.log(`Nossos funcionários são ${calcados[i].nome}`)
+            rl.question(`Qual o número do calçado que deseja editar` , (numero) => {
+                if (numero > 0 && numero <= calcados.length){
+                    rl.question('Digite o novo nome do tênis' , (nome) => {
+                        rl.question('Digite a nova marca do seu tênis' , (marca) => {
+                            rl.question('Digite o novo tamanho do seu tênis' , (tamanho) => {
+                                rl.question('Digite o novo material do seu tênis' , (material) =>{
+                                    rl.question('Digite a nova cor do seu tênis' , (cor) =>{
+                                        calcados[numero -1] = {
+                                            nome,
+                                            marca,
+                                            tamanho,
+                                            material,
+                                            cor
+                                        }
+                                        console.log('Calçado editado con sucesso')
+                                        exibirmenu()
+                                    })
+                                })
+                            })
+                        })
+                    })
+                }
+        })
+    }
+ }}       
