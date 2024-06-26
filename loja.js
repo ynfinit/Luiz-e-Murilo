@@ -111,7 +111,6 @@ function listar(){
         exibirmenu()
     }
 }
-
 function pesquisar(){
     if (calcados.length == 0){
         console.log('Não a nenhum calçado cadastrado!')
