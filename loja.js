@@ -47,7 +47,6 @@ let adi2000 = {
         case '4':
             listar()
             break
-
         case '5':
             editar()
             break
