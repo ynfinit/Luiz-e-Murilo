@@ -1,4 +1,4 @@
-const { constants } = require('buffer')
+const { constants } = require('readline')
 const readline = require('readline')
 
 const rl = readline.createInterface({
@@ -94,7 +94,7 @@ function remover(){
         })
         rl.question('Digite o numero do elemento que deseja remover:', (opcao) => {
             calcados.splice(opcao -1, 1)
-            console.log('Elemento removido com sucesso!')
+            console.log('Calçado removido com sucesso!')
             exibirmenu()
         })
     }
