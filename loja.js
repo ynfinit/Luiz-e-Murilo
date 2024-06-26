@@ -137,7 +137,7 @@ function editar(){
         console.log('Nenhum calçado listado!')
     }else {
             for (let i = 0;i < calcados.length; i ++) {
-            console.log(`Nossos funcionários são ${calcados[i].nome}`)
+            console.log(`Nossos calçados são ${calcados[i].nome}`)
             rl.question(`Qual o número do calçado que deseja editar` , (numero) => {
                 if (numero > 0 && numero <= calcados.length){
                     rl.question('Digite o novo nome do tênis' , (nome) => {
