@@ -1,4 +1,4 @@
-const { constants } = require('buffer')
+const { constants } = require('readline')
 const readline = require('readline')
 
 const rl = readline.createInterface({
@@ -47,7 +47,6 @@ let adi2000 = {
         case '4':
             listar()
             break
-
         case '5':
             editar()
             break
@@ -94,7 +93,7 @@ function remover(){
         })
         rl.question('Digite o numero do elemento que deseja remover:', (opcao) => {
             calcados.splice(opcao -1, 1)
-            console.log('Elemento removido com sucesso!')
+            console.log('Calçado removido com sucesso!')
             exibirmenu()
         })
     }
@@ -111,7 +110,6 @@ function listar(){
         exibirmenu()
     }
 }
-
 function pesquisar(){
     if (calcados.length == 0){
         console.log('Não a nenhum calçado cadastrado!')
@@ -137,7 +135,7 @@ function editar(){
         console.log('Nenhum calçado listado!')
     }else {
             for (let i = 0;i < calcados.length; i ++) {
-            console.log(`Nossos funcionários são ${calcados[i].nome}`)
+            console.log(`Nossos calçados são ${calcados[i].nome}`)
             rl.question(`Qual o número do calçado que deseja editar` , (numero) => {
                 if (numero > 0 && numero <= calcados.length){
                     rl.question('Digite o novo nome do tênis' , (nome) => {
