@@ -37,3 +37,9 @@ O sistema verifica se o caractere é valido e se ele representa alguma posição
 
 - ****6****`sair()`:Encerra o programa.
 
+## Utilização do sistema
+A ideia é que seja usado para fazer o controle de estoque de uma loja de tênis e calçados em geral, com as funções sendo criadas para facilitar o uso do dia a dia, tambem podendo ser adicionada novas funções ao longo de que o código vá ir sendo aperfeiçoado. 
+
+### Menu
+
+Para a criação do menu pensamos em algo que fosse agradavel para se olhar, pratico para se usar, de facil compreensão, mas que tâmbem fosse minimamente estiloso.

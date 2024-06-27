@@ -23,13 +23,14 @@ let adi2000 = {
 
  function exibirmenu(){
     console.log(`
-    Menu:
-    1. Cadastrar calçado
-    2. Pesquisar calçado
-    3. Remover calçado
-    4. Listar todos os calçados
-    5. Editar um calçado
-    6. Sair
+    x-------------Menu--------------x
+    |  1. Cadastrar calçado         |
+    |  2. Pesquisar calçado         |
+    |  3. Remover calçado           |
+    |  4. Listar todos os calçados  |
+    |  5. Editar um calçado         |
+    |  6. Sair                      |
+    x-------------------------------x
    `)
 
 
