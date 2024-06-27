@@ -43,3 +43,21 @@ A ideia é que seja usado para fazer o controle de estoque de uma loja de tênis
 ### Menu
 
 Para a criação do menu pensamos em algo que fosse agradavel para se olhar, pratico para se usar, de facil compreensão, mas que tâmbem fosse minimamente estiloso.
+
+# Dificuldades
+
+## Nome
+
+- Sendo a nossa quase única dificuldade do trabalho a escolha do nome foi tipo, agente tentava fazer um nome do inglês, do português misturando os dois, mais agente sempre acabava na estaca zero até que encontramos um nome que fosse não tão grande mais que é legal e até que não ficou ruim não.
+
+## Código 
+
+- Na parte do código foi bem tranquilo, fizemos em manos de um aula, aparecendo apenas alguns erros básicos como, esquecer de fechar chave, parenteses, uns break meio perdido mas no final deu tudo certo.
+
+## Slides 
+
+- Acho que os slides foi a coisa que ficou no meio termo, nen tão fácil e nen tão dificil, pensar nas cores formas escritas exige um pouco mas nada que fosse nôs atrapalhar.
+
+## Readme
+
+- O readme foi um caso em específico pois escrever não é difícil mas sim escolher as sintaxes de letras titúlos e etc, assim podendo dar destaque nas coisar que realmente importão no trabalho.
