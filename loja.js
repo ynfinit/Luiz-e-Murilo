@@ -71,7 +71,7 @@ let adi2000 = {
             rl.question('Digite o tamanho do tenis: ', (tamanho) => {
                 rl.question('Digite o material do tenis: ', (material) => {
                     rl.question('Digite a cor do tenis: ', (cor) => {
-                       calcados.push({ nome: nome, maraca: marca, tamanho: tamanho, material: material, cor: cor})
+                       calcados.push({ nome: nome, marca: marca, tamanho: tamanho, material: material, cor: cor})
                         console.log(`Tenis cadastrado com sucesso!`)
                         exibirmenu()
                     })
